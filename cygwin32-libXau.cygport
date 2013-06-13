@@ -1,0 +1,13 @@
+CROSS_HOST="i686-pc-cygwin"
+ORIG_PN="libXau"
+inherit cross xorg
+
+NAME="cygwin32-libXau"
+VERSION=1.0.8
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="X.Org Xauthority library for Cygwin 32bit toolchain"
+
+MAKEOPTS+=" libman_DATA= "
+
+KEEP_LA_FILES="none"
